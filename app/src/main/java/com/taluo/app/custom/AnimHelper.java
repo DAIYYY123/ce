@@ -26,6 +26,8 @@ public class AnimHelper {
                 PointF pointF = (PointF) animation.getAnimatedValue();
                 mCardView.setX(pointF.x);
                 mCardView.setY(pointF.y);
+                mCardView.setRotation(360 * (float) animation.getAnimatedFraction());
+                
             }
         });
 
